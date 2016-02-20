@@ -1,0 +1,29 @@
+body{
+  background: #fff;
+}
+
+.container{
+  background: #808080;
+  margin: 0 auto;
+}
+
+.lots{
+
+  padding-bottom: 5px;
+}
+
+.lots.chance{
+  padding-bottom: 10px;
+}
+
+.lots.side{
+  
+}
+.col-sm-11{
+
+  text-align: center;
+}
+
+.col-sm-11 > div {
+	border:1px solid #fff;
+}
