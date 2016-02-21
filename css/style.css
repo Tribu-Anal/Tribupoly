@@ -1,12 +1,52 @@
+html{
+  top: 0;
+  height: 100%;
+}
 body {
   background: #003E15;
   font-size: 12px;
+  font-family: 'Raleway', sans-serif;
 }
+
 .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: #4E9C68;
   margin-top: 10px;
-  width: 80%;
+  width: 100%;
   border-radius: 20px;
+}
+.container.settings{
+  background: #DEE7E1;
+  width: 40%;
+  position: absolute;
+  top: 25%;
+}
+::selection {
+  background: #c50008;
+}
+::-moz-selection {
+  background: #c50008;
+}
+
+#name{
+  font-size: 20px;
+}
+input[type="text"], input[type="text"]:focus{
+  height: 40px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bolder;
+  background: #4E9C68;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+input[type="text"]::-webkit-input-placeholder{
+  color: #fff;
 }
 table {
   text-align: center;
@@ -15,9 +55,19 @@ table {
   border-collapse: separate;
   background-color: #DEE7E1;
 }
+.logoboard{
+  padding-bottom: 80px;
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
 .col-sm-11 {
   text-align: center;
 }
 .col-sm-11 > div {
   border: 1px solid #fff;
+}
+
+.btn.btn-success{
+  
 }
