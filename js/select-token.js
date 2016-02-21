@@ -1,4 +1,4 @@
-var tokensAvailables = ['Scottish Terrier', 'Automobile', 'Battleship', 'Top Hat', 'Shoe'];
+var tokensAvailables = ['Cat', 'Battleship','Automobile'];
 var Players = [];
 
 function Token(player, tokenName){
