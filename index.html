@@ -1,13 +1,235 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tribupoly 2000!</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <script src="js/app.js"></script>
-    </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tribupoly 2000!</title>
+  <!--Jquery-->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <!--Bootstrap-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <!--Own Style-->
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/ddslick/2.0/jquery.ddslick.js"></script>
+  <img style="position:absolute; top:0px; margin-left:80px;" src="assets/logo.png" />
+  <div class="container">
+    <div class="settings container">
+      <form role="form">
+        <div class="row">
+        <div class="col-xs-5 form-group">
+          <label id="name" for="name">Player 1</label>
+          <input type="text" class="form-control" id="p1name" placeholder="Enter Name">
+        </div>
+        <div class="col-xs-5 form-group">
+          <label id="name" for="name">Player 2</label>
+          <input type="text" class="form-control" id="p2name" placeholder="Enter Name">
+        </div>
+      </div>
+        <div class="row">
+        <div class="col-xs-6 form-group">
+          <label id="name" for="inputtoken">Select Token</label>
+        </div>
+      </div>
+      <div class="row col-xs-6">
+        <div class="form-group">
+          <label id="name">Player 1</label>
+
+          <select id="tokens1">
+        <option id="automobile" value="0" data-imagesrc="assets/tokens/automobile.png"></option>
+        <option id="battleship" value="1" data-imagesrc="assets/tokens/battleship.png"></option>
+        <option id="cat" value="2" selected="selected" data-imagesrc="assets/tokens/cat.png"></option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="row col-xs-6">
+        <div class="form-group">
+          <label id="name">Player 2</label>
+
+          <select id="tokens2">
+        <option id="automobile" value="0" data-imagesrc="assets/tokens/automobile.png"></option>
+        <option id="battleship" value="1" data-imagesrc="assets/tokens/battleship.png"></option>
+        <option id="cat" value="2" selected="selected" data-imagesrc="assets/tokens/cat.png"></option>
+          </select>
+
+        </div>
+      </div>
+
+      <div class="row col-xs-8">
+        <div class="form-group">
+          <p class="help-block">Your token will represent your moves on the board.</p>
+        </div>
+      </div>
+      <div class="row col-xs-9 pull-right">
+        <div class="form-group">
+          <button type="submit" class="btn btn-success btn-lg pull-right">Start The Game</button>
+        </div>
+      </div>
+      </form>
+      <script>
+      $('#tokens1').ddslick({
+        background: "transparent",
+        width: "100",
+        imagePosition: "left",
+
+      });
+      $('#tokens2').ddslick({
+        background: "transparent",
+        width: "100",
+        imagePosition: "left",
+
+      });
+      </script>
+    </div>
+    <table class="pull-right" border="3" cellspacing="0" cellpadding="3">
+      <tr>
+        <td style="height:60px;">Free Parking
+          <div style="width:60px;height:0px;"></div>
+        </td>
+        <td style="border-bottom:solid 12px Red">Kentucky Avenue
+          <br /> $220
+        </td>
+        <td style="">Chance</td>
+        <td style="border-bottom:solid 12px Red">Indiana Avenue
+          <br /> $220
+        </td>
+        <td style="border-bottom:solid 12px Red">Illinois Avenue
+          <br /> $240
+        </td>
+        <td style="">B&amp;O Railroad
+          <br /> $200
+        </td>
+        <td style="border-bottom:solid 12px Yellow">Atlantic Avenue
+          <br /> $260
+        </td>
+        <td style="border-bottom:solid 12px Yellow">Ventnor Avenue
+          <br /> $260
+        </td>
+        <td style="">Water Works
+          <br /> $150
+        </td>
+        <td style="border-bottom:solid 12px Yellow">Marvin Gardens
+          <br /> $280
+        </td>
+        <td>Go To Jail
+          <div style="width:60px;height:0px;"></div>
+        </td>
+      </tr>
+      <tr>
+        <td style="height:34px;border-right:solid 12px Orange">New York Avenue
+          <br /> $200
+        </td>
+        <td rowspan="9" colspan="9" align="center">
+          <table cellpadding="0" cellspacing="2">
+            <tr>
+              <td>
+                <!--Insert TribuPoly Logo here-->
+                <img class="logoboard" src="assets/logoboard.png" />
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td style="border-left:solid 12px Green">Pacific Avenue
+          <br /> $300
+        </td>
+      </tr>
+      <tr>
+        <td style="height:34px;border-right:solid 12px Orange">Tennessee Avenue
+          <br /> $180
+        </td>
+        <td style="border-left:solid 12px Green">North Carolina Avenue
+          <br /> $300
+        </td>
+      </tr>
+      <tr>
+        <td style="height:34px;">Community Chest</td>
+        <td style="">Community Chest</td>
+      </tr>
+      <tr>
+        <td style="height:34px;border-right:solid 12px Orange">St. James Place
+          <br /> $180
+        </td>
+        <td style="border-left:solid 12px Green">Pennsylvania Avenue
+          <br /> $320
+        </td>
+      </tr>
+      <tr>
+        <td style="height:34px;">Pennsylvania Railroad
+          <br /> $200
+        </td>
+        <td style="">Short Line
+          <br /> $200
+        </td>
+      </tr>
+      <tr>
+        <td style="height:34px;border-right:solid 12px DarkOrchid">Virginia Avenue
+          <br /> $160
+        </td>
+        <td style="">Chance</td>
+      </tr>
+      <tr>
+        <td style="height:34px;border-right:solid 12px DarkOrchid">States Avenue
+          <br /> $140
+        </td>
+        <td style="border-left:solid 12px Blue">Park Place
+          <br /> $350
+        </td>
+      </tr>
+      <tr>
+        <td style="height:34px;">Electric Company
+          <br /> $150
+        </td>
+        <td style="">Luxury Tax
+          <br /> (pay $100)</td>
+      </tr>
+      <tr>
+        <td style="height:34px;border-right:solid 12px DarkOrchid">St. Charles Place
+          <br /> $140
+        </td>
+        <td style="border-left:solid 12px Blue">Boardwalk
+          <br /> $400
+        </td>
+      </tr>
+      <tr>
+        <td style="height:60px;">In Jail/Just Visiting</td>
+        <td style="border-top:solid 12px SkyBlue">Connecticut Avenue
+          <br /> $120
+        </td>
+        <td style="border-top:solid 12px SkyBlue">Vermont Avenue
+          <br /> $100
+        </td>
+        <td style="">Chance</td>
+        <td style="border-top:solid 12px SkyBlue">Oriental Avenue
+          <br /> $100
+        </td>
+        <td style="">Reading Railroad
+          <br /> $200
+        </td>
+        <td style="">Income Tax
+          <br /> (pay $200)</td>
+        <td style="border-top:solid 12px SaddleBrown">Baltic Avenue
+          <br /> $60
+        </td>
+        <td style="">Community Chest</td>
+        <td style="border-top:solid 12px SaddleBrown">Mediter-ranean Avenue
+          <br /> $60
+        </td>
+        <td><b>Go</b>
+          <br /> (collect $200)
+          <br />
+
+      </tr>
+    </table>
+  </div>
+</body>
+
 </html>
