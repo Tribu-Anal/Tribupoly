@@ -20,5 +20,13 @@ $('#start').click(function() {
     selectToken(tokenPlayer1, namePlayer1);
     selectToken(tokenPlayer2, namePlayer2);
     
-    //Aqui llamare tu funcion para cambiar el div
+    advanceTurn();
+    
+    //hideStartModal();
+    //showDiceModal();
+    //setupBoard();
+});
+
+$('#dice').click(function() {
+    
 });
