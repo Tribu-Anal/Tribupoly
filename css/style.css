@@ -1,29 +1,22 @@
-body{
-  background: #fff;
+body {
+  background: #003E15;
+  font-size: 12px;
 }
-
-.container{
-  background: #808080;
-  margin: 0 auto;
+.container {
+  background: #4E9C68;
+  margin-top: 10px;
+  width: 80%;
 }
-
-.lots{
-
-  padding-bottom: 5px;
+table {
+  text-align: center;
+  font-size: 12px;
+  width: 600px;
+  border-collapse: separate;
+  background-color: #DEE7E1;
 }
-
-.lots.chance{
-  padding-bottom: 10px;
-}
-
-.lots.side{
-  
-}
-.col-sm-11{
-
+.col-sm-11 {
   text-align: center;
 }
-
 .col-sm-11 > div {
-	border:1px solid #fff;
+  border: 1px solid #fff;
 }
