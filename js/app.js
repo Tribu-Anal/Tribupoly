@@ -28,5 +28,8 @@ $('#start').click(function() {
 });
 
 $('#dice').click(function() {
+    let dice = rollDice();
     
+//    displayDiceResults(dice.dice1, dice.dice2);
+//    moveToken(currentPlayer, dice.dice1, dice.dice2);
 });
