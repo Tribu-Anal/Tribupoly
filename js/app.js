@@ -32,4 +32,6 @@ $('#dice').click(function() {
     
 //    displayDiceResults(dice.dice1, dice.dice2);
 //    moveToken(currentPlayer, dice.dice1, dice.dice2);
+    
+    advanceTurn();
 });
